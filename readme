@@ -1,0 +1,52 @@
+# ###################################################################
+# module uncert_ident
+#
+# Description
+# The uncertainty identifier package (uncert_ident) can
+# read/write data,
+# compute turbulence quantities, labels and features,
+# visualise data and
+# create identifier models for high uncertainty in RANS.
+#
+# ###################################################################
+# Author: hw
+# created: 27. Jan. 2020
+# ###################################################################
+
+
+
+Quick start: process raw data
+ - Run convert_to_mat.py
+
+Quick start: process and visualise data
+ - Run example_data_read_write_use.py
+
+
+
+Data reading/writing:
+ - Generate universal mat files from raw data
+ - Implementations for eight 2D data sets
+ - Additional data sets can be included following the examples in convert_to_mat.py
+ - Current implementation converts only 2D structured data sets
+
+Logistic Regression:
+ - See logreg.py
+
+ SpaRTA:
+ - See sparta
+
+
+Python v3.8.0 used with libraries (no dependencies):
+numpy,
+cython,
+pandas,
+matplotlib,
+sympy,
+scikit-learn,
+networkx,
+statsmodels,
+mkl,
+intel-openmp,
+memory-profiler,
+Ipython (not essential),
+
