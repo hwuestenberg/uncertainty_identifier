@@ -112,7 +112,6 @@ def non_linearity_label(data_dict):
 
     # Optimise to satisfy Ling's condition of 20% active labels
     initial_threshold = np.mean(non_linearity_ratio)  # According to Ling's paper
-    #TODO Optimisation/Root finding performs poorly, plot objective function
     try:
         threshold = newton(non_linearity_objective_function,
                            initial_threshold,

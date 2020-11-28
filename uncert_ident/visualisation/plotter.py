@@ -326,7 +326,7 @@ def lining(x, y,
         set_limits(ax, xlim, ylim)
 
 
-    # Set labels and title  #TODO APPEND x/y labels
+    # Set labels and title  
     set_labels_title(ax, xlabel, ylabel, title)
 
     # Set axis scaling
@@ -1092,7 +1092,7 @@ def input_correlation(inputs, labels):
         for j in range(dim-1):
             if j > i:
                 continue
-            ax = fig.add_subplot(spec[i, j])  #TODO Add sharex and sharey, possible?
+            ax = fig.add_subplot(spec[i, j])
             ax.scatter(inputs[:, j], inputs[:, i+1], s=5*np.ones_like(labels), c=labels, alpha=0.3)
             if j == 0:
                 ax.set_ylabel("$\lambda " + str(i+2) + "$")

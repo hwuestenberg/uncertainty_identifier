@@ -197,7 +197,6 @@ def get_strain_rotation_rate_tensor(data_dict):
     data_dict['Wij'] = strain_rotation_rate(data_dict)
 
     # Investigation on mass conversation and accuracy of data:
-    # TODO tr(Sij) not == 0?, mass conversation
     nx = data_dict['nx']
     ny = data_dict['ny']
     data_dict['trSij'] = np.zeros(nx*ny)
@@ -1016,7 +1015,7 @@ def turbulence_properties(flow_data_dict, coord_sys='cartesian'):
     # Anisotropy tensor
     get_anisotropy(flow_data_dict)
 
-    # Near-wall quantities, TODO Compute tau_w with vertical gradient at wall
+    # Near-wall quantities
     get_near_wall_quantities(flow_data_dict)
 
     # Cubic eddy viscosity model (Massive computational costs, only for non-linearity metric)

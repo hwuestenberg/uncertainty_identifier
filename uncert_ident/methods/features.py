@@ -365,7 +365,6 @@ def tke_feature2(data_dict, normalise=True):
         return raw_feature
 
 
-#  TODO Consider using geometry functions
 def distance_nearest_wall(data_dict):
     """
     Compute distance to the nearest wall. Assume walls at

@@ -356,7 +356,7 @@ def load_mat(fname, kth_data=False):
     del data['__version__']
     del data['__globals__']
 
-    # Works for KTH data sets #TODO Merge kth data with general file format
+    # Works for KTH data sets
     if kth_data:
         data_dict = dict()
         for case_key in list(data):

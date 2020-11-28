@@ -369,7 +369,6 @@ class flowCase:
         return 1
 
 
-    #TODO Show multiple profiles (loop loc_list)
     def show_profile(self, var_key, coord_key, loc_list):
         """
         Display profile along coordinate for any variable
