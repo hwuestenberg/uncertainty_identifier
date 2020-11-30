@@ -1,8 +1,9 @@
 # ###################################################################
-# script LogReg_identifier
+# script lr
 #
 # Description
-# Learn identifier for the error metrics using the databasis.
+# Learn identifier using the Logistic Regression algorithm for 
+# linear models.
 #
 # ###################################################################
 # Author: hw
